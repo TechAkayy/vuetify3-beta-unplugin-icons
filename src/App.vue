@@ -1,23 +1,13 @@
 <template>
-  <v-app>
-    <v-main>
-      <HelloWorld/>
-    </v-main>
-  </v-app>
+	<v-app>
+		<v-main>
+			<v-alert :icon="uilShoppingCart"
+				>VAlert - icon is passed as a prop</v-alert
+			>
+		</v-main>
+	</v-app>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-
-  components: {
-    HelloWorld,
-  },
-
-  data: () => ({
-    //
-  }),
-}
+<script setup>
+	import uilShoppingCart from '~icons/uil/shoppingCart'
 </script>
