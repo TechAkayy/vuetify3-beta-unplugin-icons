@@ -1,6 +1,7 @@
 <template>
 	<v-app>
 		<v-main>
+			<i-uil-android />
 			<v-alert :icon="uilShoppingCart"
 				>VAlert - icon is passed as a prop</v-alert
 			>
